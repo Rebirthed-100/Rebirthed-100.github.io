@@ -29,23 +29,23 @@
             to { text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700; }
         }
 
-        /* Triangle image */
+        /* Glowing Triangle */
         .triangle {
-            margin-top: 20px;
-            width: 150px;
-            height: 150px;
-            background: linear-gradient(45deg, transparent 45%, #FFD700 45%) top, 
-                        linear-gradient(-45deg, transparent 45%, #FFD700 45%) bottom;
-            background-size: 50% 50%;
-            background-repeat: no-repeat;
+            margin: 20px auto;
+            width: 0;
+            height: 0;
+            border-left: 75px solid transparent;
+            border-right: 75px solid transparent;
+            border-bottom: 130px solid #FFD700;
             position: relative;
             animation: flicker 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px #FFD700) drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 30px #FFD700);
         }
-        
-        /* Flicker effect */
+
+        /* Flicker effect for triangle glow */
         @keyframes flicker {
-            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
-            20%, 24%, 55% { opacity: 0; }
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { filter: drop-shadow(0 0 10px #FFD700) drop-shadow(0 0 20px #FFD700) drop-shadow(0 0 30px #FFD700); }
+            20%, 24%, 55% { filter: drop-shadow(0 0 5px #FFD700); }
         }
 
         /* Footer styling */
