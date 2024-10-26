@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Cipher</title>
+    <style>
+        /* Main body styles */
+        body {
+            background-color: #000;
+            color: #FFD700;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 8px #FFD700, 0 0 15px #FFD700, 0 0 30px #FFD700;
+            margin-top: 50px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Glowing text effect */
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 40px #FFD700; }
+            to { text-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700; }
+        }
+
+        /* Triangle image */
+        .triangle {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, transparent 45%, #FFD700 45%) top, 
+                        linear-gradient(-45deg, transparent 45%, #FFD700 45%) bottom;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            position: relative;
+            animation: flicker 3s ease-in-out infinite;
+        }
+        
+        /* Flicker effect */
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+            20%, 24%, 55% { opacity: 0; }
+        }
+
+        /* Footer styling */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8em;
+            color: #FFD700;
+            text-shadow: 0 0 5px #FFD700;
+        }
+
+        /* Hover link styling */
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Mystery of Bill Cipher</h1>
+
+    <!-- Triangle representing Bill Cipher -->
+    <div class="triangle"></div>
+
+    <p style="margin: 20px; font-size: 1.2em;">
+        “Remember! Reality is an illusion, the universe is a hologram, buy gold, bye!”
+    </p>
+
+    <!-- Links to other "mysterious" pages -->
+    <p>
+        <a href="#">Secrets</a> | <a href="#">Mysteries</a> | <a href="#">Summon</a>
+    </p>
+
+    <div class="footer">
+        &copy; 2023 Mystery Shack Web Productions. All Rights Reserved.
+    </div>
+</body>
+</html>
