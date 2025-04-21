@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Spam Generator</title>
+    <title>Cocksuckers Incorporated</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,12 +52,12 @@
     
     <div class="container">
         <label for="input1">Enter your message (text):</label>
-        <input type="text" id="input1" placeholder="e.g. 'fuck you'">
+        <input type="text" id="input1" >
     </div>
     
     <div class="container">
         <label for="input2">Enter Discord user ID (numbers only):</label>
-        <input type="number" id="input2" placeholder="e.g. 1056735900270338111">
+        <input type="number" id="input2" >
     </div>
     
     <button onclick="generateAndCopy()">Generate and Copy</button>
@@ -72,7 +72,7 @@
 
             // Check if the second input is a valid number
             if (isNaN(input2) || input2.trim() === "") {
-                document.getElementById("message").textContent = "❌ Please enter a valid Discord user ID (numbers only)!";
+                document.getElementById("message").textContent = "fucko why is there nonnumbers in there";
                 return;
             }
 
@@ -87,9 +87,9 @@
 
             // Copy to clipboard
             navigator.clipboard.writeText(finalText).then(function() {
-                document.getElementById("message").textContent = "✅ Copied to clipboard!";
+                document.getElementById("message").textContent = "go ping some dumbass";
             }, function(err) {
-                document.getElementById("message").textContent = "❌ Failed to copy!";
+                document.getElementById("message").textContent = "try again monkey";
             });
         }
     </script>
