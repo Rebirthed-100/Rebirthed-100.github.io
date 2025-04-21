@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Spam Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>suck a dick pinger tm</h1>
+    
+    <div class="container">
+        <label for="input1">Enter your message (text):</label>
+        <input type="text" id="input1" placeholder="e.g. 'fuck you'">
+    </div>
+    
+    <div class="container">
+        <label for="input2">Enter Discord ping (e.g. <@1056735900270338111>):</label>
+        <input type="text" id="input2" placeholder="e.g. <@1056735900270338111>">
+    </div>
+    
+    <button onclick="generateAndCopy()">Generate and Copy</button>
+    
+    <div class="message" id="message"></div>
+
+    <script>
+        function generateAndCopy() {
+            // Get inputs
+            const input1 = document.getElementById("input1").value;
+            const input2 = document.getElementById("input2").value;
+
+            // **Pattern is left blank** for you to add
+            const pattern = "||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||";  // <-- Add your pattern here
+
+            // Combine inputs with the pattern
+            const finalText = input1 + pattern + input2;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(finalText).then(function() {
+                document.getElementById("message").textContent = "✅ Copied to clipboard!";
+            }, function(err) {
+                document.getElementById("message").textContent = "❌ Failed to copy!";
+            });
+        }
+    </script>
+</body>
+</html>
